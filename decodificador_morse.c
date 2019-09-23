@@ -1,5 +1,5 @@
 /*****************************************
-Universidade de BrasÌlia - UnB
+Universidade de Bras√≠lia - UnB
 Estrutura de Dados - Trabalho 2
 Victor Gabriel Rodrigues de Almeida - 14/0052399
 ******************************************/
@@ -83,7 +83,7 @@ void insereFinalM(char valor, char codg[], t_morse *l){
    l->ultimo = novoultimo;
 }
 
-//Lista que contÈm os caracteres e seus cÛdigos morse do arquivo
+//Lista que cont√©m os caracteres e seus c√≥digos morse do arquivo
 t_lista *listaCod(){
     t_lista *listaCod = criarLista();
     FILE *code;
@@ -118,7 +118,7 @@ void imprimirListaChar(t_lista *l){
     }
 }*/
 
-//FunÁ„o que insere nÛs na ·rvore que guarda os caracteres
+//Fun√ß√£o que insere n√≥s na √°rvore que guarda os caracteres
 void insereNo(t_elemento *l, t_no *no){
     t_no *raiz = no;
     char var;
@@ -164,7 +164,7 @@ void insereNo(t_elemento *l, t_no *no){
     //printf("dado - %c", no->dado);
 }
 
-//Cria a ·rvore que contÈm os caracteres
+//Cria a √°rvore que cont√©m os caracteres
 t_no *arvoreCod(){
     t_no *arvoreMorse = criarArvore();
     //printf("Criou arvore\n\n");
@@ -194,7 +194,7 @@ t_lista *listaMsgC(){
     return l;
 }
 
-//FunÁ„o que decodifica a mensagem por ·rvore
+//Fun√ß√£o que decodifica a mensagem por √°rvore
 void decArvore(){
     t_no *arvoreMorse = arvoreCod();
     t_no *raiz = arvoreMorse;
@@ -229,7 +229,7 @@ void decArvore(){
 
 }
 
-//FunÁ„o que insere caractere e cÛdigo na lista que guardar· os caracteres
+//Fun√ß√£o que insere caractere e c√≥digo na lista que guardar√° os caracteres
 void insereListC(t_elemento *atual, t_morse *m){
     //printf("\nEntrou\n");
 
@@ -259,7 +259,7 @@ void insereListC(t_elemento *atual, t_morse *m){
 
 }
 
-//Cria a lista que contÈm os caracteres e seus respectivos cÛdigos
+//Cria a lista que cont√©m os caracteres e seus respectivos c√≥digos
 t_morse *listaMor(){
     t_morse *listaMorse = criaLMorse();
     t_lista *listaC = listaCod();
@@ -272,7 +272,7 @@ t_morse *listaMor(){
     return listaMorse;
 }
 
-//FunÁ„o que decodifica a mensagem utilizando lista
+//Fun√ß√£o que decodifica a mensagem utilizando lista
 void decLista(){
     t_lista *msg = listaMsgC();
     t_morse *codigos = listaMor();
